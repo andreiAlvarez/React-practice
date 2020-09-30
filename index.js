@@ -6,13 +6,13 @@ class Counter extends React.Component {
     this.state = {
       count: 0
     };
-    // change code below this line
+
 this.increment=this.increment.bind(this);
 this.decrement=this.decrement.bind(this);
 this.reset=this.reset.bind(this);
-    // change code above this line
+    
   }
-  // change code below this line
+ 
 increment(){
   this.setState(state=>({
     count: state.count + 1
@@ -29,7 +29,6 @@ reset(){
   }))
 };
 
-  // change code above this line
   render() {
     return (
       <div>
@@ -49,23 +48,23 @@ class ControlledInput extends React.Component {
     this.state = {
       input: ''
     };
-    // change code below this line
+
 this.handleChange=this.handleChange.bind(this);
-    // change code above this line
+
   }
-  // change code below this line
+
 handleChange(event){
   this.setState({
     input: event.target.value
 })
 }
-  // change code above this line
+  
   render() {
     return (
       <div>
-        { /* change code below this line */}
+       
 <input value = {this.state.input} onChange = {this.handleChange.bind(this)}/>
-        { /* change code above this line */}
+      
         <h4>Controlled Input:</h4>
         <p>{this.state.input}</p>
       </div>
